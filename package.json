@@ -1,0 +1,24 @@
+{
+  "name": "react-page-slide",
+  "version": "1.0.0",
+  "description": "react page slide",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "",
+    "babel-loader": "",
+    "babel-preset-es2015": "",
+    "babel-preset-react": "",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-addons-css-transition-group":"15.4.2",
+    "react-router": "",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
