@@ -13,6 +13,41 @@ export class App extends React.Component {
             data: 'data 1',
         };
 
+
+        document.onkeydown = (e)=>{
+            e = e || window.event;
+
+            if (e.keyCode == '13') {
+                // up arrow
+                console.log("center");
+                window.location.href= "#/pageCenter";
+            }
+
+            if (e.keyCode == '38') {
+                // up arrow
+                console.log("up");
+                window.location.href= "#/pageTop";
+            }
+            else if (e.keyCode == '40') {
+                // down arrow
+                console.log("down");
+                window.location.href= "#/pageDown";
+
+            }
+            else if (e.keyCode == '37') {
+                // left arrow
+                console.log("left");
+                window.location.href= "#/pageLeft";
+
+            }
+            else if (e.keyCode == '39') {
+                // right arrow
+                console.log("right");
+                window.location.href= "#/pageRight";
+
+            }
+        }
+
     };
 
     render() {
