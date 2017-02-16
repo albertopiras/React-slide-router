@@ -1,3 +1,33 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 3em;
+    font-size: 50px;
+    opacity: 0.4;
+}
+
+h2{
+    text-align: center;
+    opacity: 0.4;
+}
+
+.page,#app,[data-reactroot]{
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
 .example-enter {
     opacity: 0.01;
 }
@@ -16,11 +46,74 @@
     transition: opacity 500ms ease-in;
 }
 
-.example-appear {
-    opacity: 0.01;
+/*.example-appear {*/
+    /*opacity: 0.01;*/
+/*}*/
+
+/*.example-appear.example-appear-active {*/
+    /*opacity: 1;*/
+    /*transition: opacity 500ms ease-in;*/
+/*}*/
+
+
+#pageCenter{
+    background: dodgerblue;
+}
+#pageTop{
+    background: yellow;
+}
+#pageRight{
+    background: red;
+}
+#pageDown{
+    background: grey;
 }
 
-.example-appear.example-appear-active {
+#pageLeft{
+    background: greenyellow;
+}
+
+
+
+#pageCenter.example-enter.example-enter-active{
     opacity: 1;
-    transition: opacity 500ms ease-in;
+    background: purple;
+}
+
+#pageTop.example-enter.example-enter-active{
+    opacity: 1;
+    background: purple;
+}
+#pageRight.example-enter.example-enter-active{
+    opacity: 1;
+    background: purple;
+}
+
+/*buttons*/
+
+
+#directionButtons{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.btn{
+    background: transparent;
+    cursor: pointer;
+    border: 20px solid transparent;
+    padding: 0;
+}
+
+.btn-go-to-left {
+    border-right: 30px solid gray;
+}
+.btn-go-to-right{
+    border-left: 30px solid gray;
+}
+.btn-go-up{
+    border-bottom: 30px solid gray;
+}
+.btn-go-down{
+    border-top: 30px solid gray;
 }
