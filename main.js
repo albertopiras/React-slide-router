@@ -10,12 +10,12 @@ ReactDOM.render(
 <Router history = {hashHistory}>
     <Route path = "/" component = {App}>
         <IndexRoute component = {PageCenter} />
-        <Route path = "PageCenter" component = {PageCenter} />
+        <Route path = "pageCenter" component = {PageCenter} />
         <Route path = "pageTop" component = {PageTop} />
         <Route path = "pageRight" component = {PageRight} />
         <Route path = "pageDown" component = {PageDown} />
         <Route path = "pageLeft" component = {PageLeft} />
     </Route>
 </Router>
-        
+
 , document.getElementById('app'));
