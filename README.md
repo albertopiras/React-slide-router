@@ -99,4 +99,4 @@ The example will run on http://localhost:4000/ with webpack dev server.
 
 MIT
 
-[view demo]: <http://http://albertopiras-enta.rhcloud.com/react-page-router-slide/>
+[view demo]: <http://albertopiras-enta.rhcloud.com/react-page-router-slide//>
