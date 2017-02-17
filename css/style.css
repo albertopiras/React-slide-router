@@ -4,6 +4,8 @@ html,body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    background: #fafafa;
+    color: #ffffff;
 }
 h1{
     text-align: center;
@@ -35,19 +37,19 @@ h2{
     transition: opacity 200ms ease-in;
 }
 #pageCenter{
-    background: dodgerblue;
+    background: #3F51B5;
 }
 #pageTop{
-    background: yellow;
+    background: #f44336;
 }
 #pageRight{
-    background: red;
+    background: #4CAF50;
 }
 #pageDown{
-    background: grey;
+    background: #9C27B0;
 }
 #pageLeft{
-    background: greenyellow;
+    background: #FF9800;
 }
 #pageCenter.example-enter.example-enter-active{
     -webkit-animation: scaleUp .7s ease both;
@@ -73,10 +75,28 @@ h2{
 
 /*BUTTONS*/
 
-#directionButtons{
+#directionButtonsContainer{
     position: fixed;
     bottom: 0;
     right: 0;
+    height: 150px;
+    width: 150px;
+}
+
+#directionButtons{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+#directionButtons a> button:hover{
+    opacity: 1;
+}
+
+#directionButtons a>button{
+    position: absolute;
+    outline: none;
+    opacity: 0.4;
 }
 .btn{
     background: transparent;
@@ -85,17 +105,34 @@ h2{
     padding: 0;
 }
 .btn-go-to-left {
-    border-right: 30px solid gray;
+    border-right: 30px solid #ffffff;
+    top: 55px;
+    left: 0;
 }
 .btn-go-to-right{
-    border-left: 30px solid gray;
+    border-left: 30px solid #ffffff;
+    right: 0;
+    top: 55px;
 }
 .btn-go-up{
-    border-bottom: 30px solid gray;
+    border-bottom: 30px solid #ffffff;
+    right: 55px;
+   top:0;
 }
 .btn-go-down{
-    border-top: 30px solid gray;
+    border-top: 30px solid #ffffff;
+    right: 55px;
+    bottom: 0;
 }
+.btn-go-center{
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0.4;
+    top: 55px;
+    left: 55px;
+}
+
+
 
 
 /*KEYFRAMES*/
