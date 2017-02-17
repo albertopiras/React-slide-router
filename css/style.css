@@ -103,6 +103,8 @@ h2{
     cursor: pointer;
     border: 20px solid transparent;
     padding: 0;
+    width: 0;
+    height: 0;
 }
 .btn-go-to-left {
     border-right: 30px solid #ffffff;
