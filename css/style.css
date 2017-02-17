@@ -1,0 +1,170 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background: #fafafa;
+    color: #ffffff;
+}
+h1{
+    text-align: center;
+    margin-top: 5em;
+    font-size: 50px;
+    opacity: 0.4;
+}
+h2{
+    text-align: center;
+    opacity: 0.4;
+}
+
+
+/*PAGES*/
+
+.page,#app,[data-reactroot]{
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.example-leave {
+    opacity: 1;
+}
+.example-leave.example-leave-active {
+    opacity: 0.00;
+    transition: opacity 200ms ease-in;
+}
+#pageCenter{
+    background: #3F51B5;
+}
+#pageTop{
+    background: #f44336;
+}
+#pageRight{
+    background: #4CAF50;
+}
+#pageDown{
+    background: #9C27B0;
+}
+#pageLeft{
+    background: #FF9800;
+}
+#pageCenter.example-enter.example-enter-active{
+    -webkit-animation: scaleUp .7s ease both;
+    animation: scaleUp .7s ease both;
+}
+#pageLeft.example-enter.example-enter-active{
+    -webkit-animation: moveFromLeft .6s ease both;
+    animation: moveFromLeft .6s ease both;
+}
+#pageRight.example-enter.example-enter-active{
+    -webkit-animation: moveFromRight .6s ease both;
+    animation: moveFromRight .6s ease both;
+}
+#pageTop.example-enter.example-enter-active{
+    -webkit-animation: moveFromTop .6s ease both;
+    animation: moveFromTop .6s ease both;
+}
+#pageDown.example-enter.example-enter-active{
+    -webkit-animation: moveFromBottom .6s ease both;
+    animation: moveFromBottom .6s ease both;
+}
+
+
+/*BUTTONS*/
+
+#directionButtonsContainer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 150px;
+    width: 150px;
+}
+
+#directionButtons{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+#directionButtons a> button:hover{
+    opacity: 1;
+}
+
+#directionButtons a>button{
+    position: absolute;
+    outline: none;
+    opacity: 0.4;
+}
+.btn{
+    background: transparent;
+    cursor: pointer;
+    border: 20px solid transparent;
+    padding: 0;
+}
+.btn-go-to-left {
+    border-right: 30px solid #ffffff;
+    top: 55px;
+    left: 0;
+}
+.btn-go-to-right{
+    border-left: 30px solid #ffffff;
+    right: 0;
+    top: 55px;
+}
+.btn-go-up{
+    border-bottom: 30px solid #ffffff;
+    right: 55px;
+   top:0;
+}
+.btn-go-down{
+    border-top: 30px solid #ffffff;
+    right: 55px;
+    bottom: 0;
+}
+.btn-go-center{
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0.4;
+    top: 55px;
+    left: 55px;
+}
+
+
+
+
+/*KEYFRAMES*/
+
+@-webkit-keyframes moveFromLeft {
+    from { -webkit-transform: translateX(-100%); }
+}
+@keyframes moveFromLeft {
+    from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+@-webkit-keyframes moveFromRight {
+    from { -webkit-transform: translateX(100%); }
+}
+@keyframes moveFromRight {
+    from { -webkit-transform: translateX(100%); transform: translateX(100%); }
+}
+@-webkit-keyframes moveFromTop {
+    from { -webkit-transform: translateY(-100%); }
+}
+@keyframes moveFromTop {
+    from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+@-webkit-keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); }
+}
+@keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+@-webkit-keyframes scaleUp {
+    from { opacity: 0; -webkit-transform: scale(.8); }
+}
+@keyframes scaleUp {
+    from { opacity: 0; -webkit-transform: scale(.8); transform: scale(.8); }
+}
+
