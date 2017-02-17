@@ -1,11 +1,11 @@
-#  React page router slide
+#  React Slide Page Router
 
-Custom page routing with slide effect made with React. [view demo]
+This is a custom page routing with slide effect made with React. [view demo]
 
 
 ## Introduction
 
-This is an example how to implement a React page routing with slide effect or custom animation effects using the React's ReactCSSTransitionGroup component.
+This is an example how to implement a React page routing with slide effect or custom animation effects using the React's 'ReactCSSTransitionGroup' component.
 This is also the starting point to implement a React slideshow.
  --> [view demo] <--
 
@@ -30,7 +30,7 @@ If you want use  animation in React routing you have to install react-addons-css
 	</ReactCSSTransitionGroup>
 
 
-default page animations will be:
+default basic page animations could be:
 ```
 .react-page-router-enter {
     opacity: 0.01;
@@ -51,7 +51,7 @@ default page animations will be:
 }
 ```
 
-Now uou can change your custom animation adding #yourPageID before each of above classes.
+Now you can change your custom animation adding #yourPageID before each of above classes.
 eg:
 ```
 #pageX.react-page-router-enter.react-page-router-enter-active{
@@ -62,10 +62,12 @@ eg:
 
 ## Installation
 
+If you want try the code locally:
+
 Clone the repository
 
 ```sh
-$ git clone https://github.com/Alberto-/react-page-router-slide.git
+$ git clone https://github.com/Alberto-/react-router-slide.git
 ```
 
 
@@ -77,7 +79,7 @@ Prerequisites: node
 ```
 $ nmp install
 ```
-this will download all required packages
+this will download all required packages.
 
 
 ### Run
@@ -86,7 +88,7 @@ this will download all required packages
 $ npm start
 ```
 
-The Example will run on http://localhost:4000/
+The example will run on http://localhost:4000/ with webpack dev server.
 
 
 
@@ -97,4 +99,4 @@ The Example will run on http://localhost:4000/
 
 MIT
 
-[view demo]: <http://react-page-route-slideshow-enta.rhcloud.com/app/>
+[view demo]: <http://react-router-slide-show-enta.rhcloud.com/app/>
