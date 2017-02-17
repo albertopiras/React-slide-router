@@ -49,13 +49,11 @@ export class App extends React.Component {
     };
 
     checkPage(checkPage:string,redirectPage:string){
-        console.log("check page");
         if(window.location.href.includes(checkPage)){
             window.location.href= "#/pageCenter";
         }else{
             window.location.href= "#/" + redirectPage;
         }
-
     }
 
     render() {
