@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --hot",
+    "prestart": "./node_modules/.bin/webpack  ./main.js index.js"
   },
   "author": "",
   "license": "ISC",
