@@ -13,42 +13,51 @@ export class App extends React.Component {
             data: 'data 1',
         };
 
-
         document.onkeydown = (e)=>{
             e = e || window.event;
 
+            // center
             if (e.keyCode == '13') {
-                // up arrow
                 console.log("center");
                 window.location.href= "#/pageCenter";
             }
 
+            // up arrow
             if (e.keyCode == '38') {
-                // up arrow
                 console.log("up");
                 window.location.href= "#/pageTop";
             }
+
+            // down arrow
             else if (e.keyCode == '40') {
-                // down arrow
                 console.log("down");
                 window.location.href= "#/pageDown";
 
             }
+
+            // left arrow
             else if (e.keyCode == '37') {
-                // left arrow
                 console.log("left");
-                window.location.href= "#/pageLeft";
-
+                this.checkPage("pageRight", "pageLeft");
             }
-            else if (e.keyCode == '39') {
-                // right arrow
-                console.log("right");
-                window.location.href= "#/pageRight";
 
+            // right arrow
+            else if (e.keyCode == '39') {
+                console.log("right");
+                this.checkPage("pageLeft", "pageRight");
             }
         }
-
     };
+
+    checkPage(checkPage:string,redirectPage:string){
+        console.log("check page");
+        if(window.location.href.includes(checkPage)){
+            window.location.href= "#/pageCenter";
+        }else{
+            window.location.href= "#/" + redirectPage;
+        }
+
+    }
 
     render() {
         return (
@@ -98,7 +107,7 @@ export class PageTop extends React.Component {
 export class PageRight extends React.Component {
     render() {
         return (
-            <div className="page"  id="pageRight">
+            <div className="page "  id="pageRight">
                 <h1>Page pageRight</h1>
             </div>
         )
