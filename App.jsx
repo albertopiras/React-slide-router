@@ -25,14 +25,13 @@ export class App extends React.Component {
             // up arrow
             if (e.keyCode == '38') {
                 console.log("up");
-                window.location.href= "#/pageTop";
+                this.checkPage("pageDown", "pageTop");
             }
 
             // down arrow
             else if (e.keyCode == '40') {
                 console.log("down");
-                window.location.href= "#/pageDown";
-
+                this.checkPage("pageTop", "pageDown");
             }
 
             // left arrow
