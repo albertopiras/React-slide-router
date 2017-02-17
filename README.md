@@ -67,7 +67,7 @@ If you want try the code locally:
 Clone the repository
 
 ```sh
-$ git clone https://github.com/Alberto-/react-router-slide.git
+$ git clone https://github.com/Alberto-/React-slide-router.git
 ```
 
 
