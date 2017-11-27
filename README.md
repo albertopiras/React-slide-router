@@ -77,7 +77,7 @@ Prerequisites: node
 
 
 ```
-$ nmp install
+$ npm install
 ```
 this will download all required packages.
 
