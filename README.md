@@ -99,4 +99,4 @@ The example will run on http://localhost:4000/ with webpack dev server.
 
 MIT
 
-[view demo]: <https://alberto-.github.io/React-slide-router/>
+[view demo]: <https://albertopiras.github.io/React-slide-router/>
